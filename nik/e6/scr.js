@@ -11,16 +11,22 @@
 
 //“This is the iteration n and it matched with the number x from the position j from the array”.
 
-var team = [ 8, 31 , 89, 71, 57, 27];
-console.log(team);
-for (var i = 0; i < 100; i++) {
-    if (i = team){
-    
-    document.getElementById('res').innerHTML += ("This is the iteration number: " + i + "<br> <br>");
-    var i = 100;
-    }
-    else{}
-   }
+
+
+
+   let team = [ 8, 31 , 89, 71, 57, 27];
+   let n = 100;
+   console.log(team);
+   for (let i = 0; i <= n; i++) {
+       for (let x = 0; x < team.length; x++){
+           if (i == team[x]){
+       
+               document.getElementById('res').innerHTML += `This is the iteration number: ${i} and it matched with the number ${team[x]} from the position ${x} from the array<br>`;
+               
+               }
+           else{}
+       }
+      }
    
    
 //for (var i = 0; i < 100; i++)  
